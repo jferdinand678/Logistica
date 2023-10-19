@@ -1,1 +1,3 @@
-winget install Google.Chrome Microsoft.Edge Microsoft.PowerShell_8wekyb3d8bbwe Insecure.Nmap Synology.Assistant WinSCP.WinSCP Oracle.VirtualBox SumatraPDF.SumatraPDF Git.Git
+
+git fetch
+git pull
