@@ -1,4 +1,4 @@
-Start-Transcript -Path "C:\scripts\log\update.log"
+Start-Transcript -Path "D:\log\update.log"
 git pull
 git fetch
 Stop-Transcript
