@@ -1,3 +1,12 @@
+<#
+.Synopsis
+  
+	  
+.Description
+	IT WORKS!
+
+#>
+
 $EmailDestinatario = ""
 $EmailEmisor = ""
 $Asunto = "Prueba envío mail GMail desde PowerShell"
