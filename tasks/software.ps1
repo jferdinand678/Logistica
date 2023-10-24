@@ -10,7 +10,7 @@
 $ID = "$((Get-Date).ToString('yy'))$((Get-Date).ToString('MM'))$((Get-Date).ToString('dd'))$((Get-Date).ToString('HH'))$((Get-Date).ToString('mm'))"
 Start-Transcript -Path "D:\log\software_$ID.log"
 
-winget install Microsoft.Powershell Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe Google.Chrome Google.GoogleDrive Google.EarthPro Google.ChromeRemoteDesktop Spotify.Spotify Adobe.Acrobat.Reader.64-bit dotPDNLLC.paintdotnet Zoom.Zoom VideoLAN.VLC TheDocumentFoundation.LibreOffice.LTS 7zip.7zip Microsoft.Teams Cyanfish.NAPS2 --silent --disable-interactivity
+winget install Microsoft.Powershell Google.Chrome Google.GoogleDrive Google.EarthPro Google.ChromeRemoteDesktop Adobe.Acrobat.Reader.64-bit dotPDNLLC.paintdotnet Zoom.Zoom VideoLAN.VLC TheDocumentFoundation.LibreOffice.LTS 7zip.7zip Microsoft.Teams Cyanfish.NAPS2 --silent --disable-interactivity
 
 winget uninstall cortana
 winget uninstall skype
