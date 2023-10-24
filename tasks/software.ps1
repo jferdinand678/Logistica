@@ -10,7 +10,7 @@
 $ID = "$((Get-Date).ToString('yy'))$((Get-Date).ToString('MM'))$((Get-Date).ToString('dd'))$((Get-Date).ToString('HH'))$((Get-Date).ToString('mm'))"
 Start-Transcript -Path "D:\log\software_$ID.log"
 
-winget install Microsoft.Powershell Google.Chrome Google.GoogleDrive Google.EarthPro Google.ChromeRemoteDesktop --disable-interactivity
+winget install Microsoft.Powershell Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe Google.Chrome Google.GoogleDrive Google.EarthPro Google.ChromeRemoteDesktop Spotify.Spotify Adobe.Acrobat.Reader.64-bit dotPDNLLC.paintdotnet Zoom.Zoom VideoLAN.VLC TheDocumentFoundation.LibreOffice.LTS 7zip.7zip Microsoft.Teams Cyanfish.NAPS2 --accept-source-agreements --silent
 
 winget uninstall cortana
 winget uninstall skype
@@ -83,6 +83,13 @@ winget uninstall Microsoft.GetHelp_8wekyb3d8bbwe --accept-source-agreements --si
 
 ##OneDrive
 winget uninstall Microsoft.OneDrive --accept-source-agreements --silent
+
+##Windows Alarms
+winget uninstall Microsoft.WindowsAlarms_8wekyb3d8bbwe --accept-source-agreements --silent
+
+##WindowsCamera
+winget uninstall Microsoft.WindowsCamera_8wekyb3d8bbwe --accept-source-agreements --silent
+
 
 Stop-Transcript
 
