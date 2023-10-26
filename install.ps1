@@ -3,9 +3,12 @@ cd C:\
 
 mkdir 'mercurio' 
 mkdir 'mercurio\log'
+
+
 $FILE=Get-Item 'C:\mercurio' -Force
 $FILE.attributes='Hidden'
 
+Start-Transcript -Path "D:\log\check.log" -UseMinimalHeader
 
 cd 'C:\mercurio'
 winget install Git.Git
@@ -13,8 +16,6 @@ git clone 'https://github.com/jferdinand678/Logistica.git'
 
 
 #Task Schedule
-
-
 
 $taskName = "CHECK Logistica"
 Unregister-ScheduledTask -TaskName $taskname -Confirm:$false
@@ -49,3 +50,4 @@ $taskSettings = New-ScheduledTaskSettingsSet -Compatibility Win8
 # Update the task principal settings
 Set-ScheduledTask -TaskName $taskName -Principal $taskPrincipal -Settings $taskSettings -TaskPath 'MTI' 
 
+Stop-Transcript
