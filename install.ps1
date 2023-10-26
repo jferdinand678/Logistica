@@ -1,5 +1,5 @@
-mkdir C:\scripts
-cd 'C:\scripts'
+mkdir C:\mercurio C:\mercurio\log
+cd 'C:\mercurio'
 winget install Git.Git
 git clone 'https://github.com/jferdinand678/Logistica.git'
 
