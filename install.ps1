@@ -23,7 +23,7 @@ $description = "Activa CHECK"
 # Create a new task action
 
 $taskAction = New-ScheduledTaskAction `
-    -Execute 'powershell.exe' `
+    -Execute 'pwsh.exe' `
     -Argument '-File "C:\mercurio\Logistica\tasks\check.ps1"'
     
 
