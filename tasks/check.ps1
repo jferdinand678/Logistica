@@ -12,6 +12,4 @@ Get-ScheduledTaskInfo -TaskPath 'MTI' -TaskName 'UPDATE Logistica'
 Get-ScheduledTaskInfo -TaskPath 'MTI'-TaskName 'SOFTWARE Logistica'
 Get-ScheduledTaskInfo -TaskPath 'MTI'-TaskName 'CHECK Logistica'
 
-Restart-Computer
-
 Stop-Transcript
