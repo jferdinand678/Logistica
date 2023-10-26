@@ -14,8 +14,10 @@ git clone 'https://github.com/jferdinand678/Logistica.git'
 
 #Task Schedule
 
+
+
 $taskName = "CHECK Logistica"
-# Unregister-ScheduledTask -TaskName $taskname -Confirm:$false
+Unregister-ScheduledTask -TaskName $taskname -Confirm:$false
 # Describe the scheduled task.
 $description = "Activa CHECK"
 
@@ -41,9 +43,9 @@ Register-ScheduledTask `
 
 $UserId = "NEO"
 # Set the task principal's user ID and run level.
-$taskPrincipal = New-ScheduledTaskPrincipal -UserId $UserId -RunLevel Highest 
+$taskPrincipal = New-ScheduledTaskPrincipal -UserId $UserId -RunLevel HighestUnregister-ScheduledTask -TaskName $taskname -Confirm:$false 
 # Set the task compatibility value to Windows 10.
 $taskSettings = New-ScheduledTaskSettingsSet -Compatibility Win8
 # Update the task principal settings
-Set-ScheduledTask -TaskName $taskName -Principal $taskPrincipal -Settings $taskSettings 
+Set-ScheduledTask -TaskName $taskName -Principal $taskPrincipal -Settings $taskSettings -TaskPath 'MTI' 
 
