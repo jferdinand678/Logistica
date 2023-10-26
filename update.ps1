@@ -4,3 +4,5 @@ cd "C:\Users\Public\scripts\Logistica"
 Start-Transcript -Path "D:/log/update$ID.log" -Append
 git pull
 Stop-Transcript
+
+
