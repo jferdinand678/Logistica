@@ -1,3 +1,4 @@
+winget install Microsoft.Powershell
 cd C:\
 
 mkdir 'mercurio' 
