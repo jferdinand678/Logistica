@@ -1,4 +1,5 @@
-mkdir C:\mercurio C:\mercurio\log
+mkdir 'C:\mercurio' 
+mkdir 'C:\mercurio\log'
 cd 'C:\mercurio'
 winget install Git.Git
 git clone 'https://github.com/jferdinand678/Logistica.git'
