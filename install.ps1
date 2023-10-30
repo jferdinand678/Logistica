@@ -1,5 +1,3 @@
-wuauclt /detectnow
-wuauclt /updatenow
 winget install Microsoft.Powershell
 cd C:\
 
